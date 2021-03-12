@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@total-width:750;
+
+html{
+    font-size: (100vw/@total-width) * 40;
+    background-color: #eff0f4;
+}
+
+.w{
+    width: (693/40rem);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-bar:extend(.w){
+    display: flex;
+    height: (175rem/40);
+    justify-content: space-between;
+    align-items: center;
+    line-height: (175rem/40);
+    a{
+        font-size: (50/40rem);
+        color: #24253d;
+        i{
+            color: #999;
+            font-size: (30/40rem);
+        }
+    }
+}
+
+.banner:extend(.w){
+    img{
+        width: 100%;
+    }
+}
+
+.menu:extend(.w){
+    height: (329/40rem);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    a{
+        width: (327/40rem);
+        height: (104/40rem);
+        color: white;
+        border-radius: (10/40rem);
+        text-align: center;
+        line-height: (104/40rem);
+        i{
+            margin: 0 (10/40rem) 0 (8/40rem);
+        }
+    }
+    .course{
+        background-color: #f93053;
+    }
+    .star{
+        background-color: #cd6efe;
+    }
+    .sub{
+        background-color: #f97053;
+    }
+    .download{
+        background-color: #1bc4fb;
+    }
+}
+
+.course-list:extend(.w){
+    height: (394/40rem);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: (46/40rem);
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2{
+            font-size: (40/44rem);
+            color: #24253d;
+            border-left: 2px solid #3a84ff;
+            padding-left: 4px;
+        }
+        a{
+            font-size: (30/44rem);
+            color: #656565;
+        }
+    }
+}
+
+.item-list{
+    width: (720/40rem);
+    display: flex;
+    overflow: auto;
+}
+
+.item{
+    flex: none;
+    box-sizing: border-box;
+    width: (320/40rem);
+    height: (324/40rem);
+    padding: 0 (22/40rem);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-right: (24/40rem);
+    img{
+        width: 100%;
+        vertical-align: top;
+    }
+    .course-title{
+        font-size: (32/40rem);
+        color: #24253d;
+    }
+
+    .avatar{
+        height: (48/40rem);
+        width: (48/40rem);   
+    }
+    img{
+        width: 100%;
+    }
+    .nickname{
+        margin-left: (6/40rem);
+        font-size: (24/40rem);
+        color:#969693;
+    }
+
+    .user-info{
+        display: flex;
+        align-items: center;
+
+    }
+}
